@@ -1,0 +1,31 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() { return request.auth != null; }
+    function profile() { return get(/databases/$(database)/documents/users/$(request.auth.uid)); }
+    function isAdmin() { return signedIn() && profile().data.role == 'admin'; }
+    function ownsTeacher(teacherId) { return signedIn() && profile().data.role == 'teacher' && profile().data.teacherId == teacherId; }
+    function publicDocument() { return resource.data.published == true && resource.data.visibility == 'public'; }
+
+    match /users/{userId} {
+      allow read: if isAdmin() || (signedIn() && request.auth.uid == userId);
+      allow write: if isAdmin();
+    }
+    match /teachers/{teacherId} {
+      allow read: if isAdmin() || ownsTeacher(teacherId) || publicDocument();
+      allow write: if isAdmin();
+    }
+    match /memories/{document=**} {
+      allow read: if isAdmin() || ownsTeacher(resource.data.teacherId) || publicDocument();
+      allow write: if isAdmin();
+    }
+    match /lessons/{document=**} {
+      allow read: if isAdmin() || ownsTeacher(resource.data.teacherId) || publicDocument();
+      allow write: if isAdmin();
+    }
+    match /letters/{document=**} {
+      allow read: if isAdmin() || ownsTeacher(resource.data.teacherId) || publicDocument();
+      allow write: if isAdmin();
+    }
+  }
+}
