@@ -12,7 +12,8 @@ interface UserSession {
   exp: number
 }
 
-const API_BASE = 'http://127.0.0.1:4174'
+// const API_BASE = 'http://127.0.0.1:4174'
+const API_BASE = ''
 const TOKEN_KEY = 'teacher_archive_token'
 
 const go = (to: string) => {
