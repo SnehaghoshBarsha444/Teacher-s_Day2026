@@ -122,7 +122,7 @@ function LoginView({ onLoginSuccess }: { onLoginSuccess: (token: string, user: U
               type="text"
               required
               autoComplete="username"
-              placeholder="e.g. Srabani_Mam, Dada, SnehaGhosh"
+              // placeholder=""
               value={username}
               onChange={(e) => setUsername(e.target.value)}
             />
