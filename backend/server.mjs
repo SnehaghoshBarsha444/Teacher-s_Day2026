@@ -22,12 +22,14 @@ const users = {
   SnehaGhosh: { password: 'SnehaGhosh', role: 'admin', teacherId: null, redirectTo: '/' },
 }
 
-function sendJson(response, status, body) {
+function sendJson(request, response, status, body) {
+  const origin = request.headers.origin || '*'
   response.writeHead(status, {
     'Content-Type': 'application/json',
-    'Access-Control-Allow-Origin': 'http://127.0.0.1:5173',
+    'Access-Control-Allow-Origin': origin,
     'Access-Control-Allow-Methods': 'GET,POST,OPTIONS',
     'Access-Control-Allow-Headers': 'Content-Type,Authorization',
+    'Access-Control-Allow-Credentials': 'true',
   })
   response.end(JSON.stringify(body))
 }
@@ -79,7 +81,7 @@ async function handleLogin(request, response) {
   const user = users[String(username ?? '')]
 
   if (!user || user.password !== String(password ?? '')) {
-    sendJson(response, 401, { message: 'Invalid username or password.' })
+    sendJson(request, response, 401, { message: 'Invalid username or password.' })
     return
   }
 
@@ -91,22 +93,22 @@ async function handleLogin(request, response) {
     exp: Date.now() + 1000 * 60 * 60 * 8,
   }
 
-  sendJson(response, 200, { token: createToken(session), user: session })
+  sendJson(request, response, 200, { token: createToken(session), user: session })
 }
 
 function handleSession(request, response) {
   const session = readSession(request)
   if (!session) {
-    sendJson(response, 401, { message: 'Session expired. Please log in again.' })
+    sendJson(request, response, 401, { message: 'Session expired. Please log in again.' })
     return
   }
 
-  sendJson(response, 200, { user: session })
+  sendJson(request, response, 200, { user: session })
 }
 
 const server = createServer(async (request, response) => {
   if (request.method === 'OPTIONS') {
-    sendJson(response, 204, {})
+    sendJson(request, response, 204, {})
     return
   }
 
@@ -121,12 +123,12 @@ const server = createServer(async (request, response) => {
       return
     }
 
-    sendJson(response, 404, { message: 'Not found.' })
+    sendJson(request, response, 404, { message: 'Not found.' })
   } catch {
-    sendJson(response, 400, { message: 'Bad request.' })
+    sendJson(request, response, 400, { message: 'Bad request.' })
   }
 })
 
-server.listen(PORT, '127.0.0.1', () => {
-  console.log(`Teacher Archive auth API running at http://127.0.0.1:${PORT}`)
+server.listen(PORT, '0.0.0.0', () => {
+  console.log(`Teacher Archive auth API running on port ${PORT}`)
 })
