@@ -121,7 +121,7 @@ Thank you for your tireless way,
 Of teaching us from day to day.
 Happy Teachers' Day to you,
 A mentor wonderful and true!` },
-  'Sandhya Mam': { id: 'Sandhya Mam', initials: 'SM', name: 'Sandhya Mam', poem: `Dear Sandhya Mam, 
+  'Sandhya_Mam': { id: 'Sandhya_Mam', initials: 'SM', name: 'Sandhya Mam', poem: `Dear Sandhya Mam, 
 You never taught from a syllabus or book,
 Just believed in the idea, one honest look.
 When our plans were shaky, our confidence thin,
@@ -154,7 +154,7 @@ Towards every dream, you helped me grow,
 Happiness and knowledge began to flow.
 Happy Teachers’ Day to the teachers who made
 Learning a journey I’ll never forget.` },
-  'Soumyadeep': { id: 'Soumyadeep', initials: 'SD', name: 'Soumyadeep Dada', poem: `Dear Dada,
+  'Dada': { id: 'Dada', initials: 'SD', name: 'Soumyadeep Dada', poem: `Dear Dada,
 Dear Dada, you’ve always been there,
 The one who guides me with such care.
 When I’m lost, you help me find my way,
