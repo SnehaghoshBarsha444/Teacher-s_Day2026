@@ -11,7 +11,7 @@ Years have passed, and I’ve moved ahead,
 But your guidance still stays in my head.
 I may be in college, walking a different way,
 But I’ll always remember the teachers who shaped my days.` },
-  'English_Mam': { id: 'English_Mam', initials: 'EM', name: 'English Mam', designation: 'English', poem: `Dear English Mam, my deepest gratitude is yours,
+  'English_Mam': { id: 'English_Mam', initials: 'EM', name: 'English Mam', designation: 'English', poem: `Dear Mam, my deepest gratitude is yours,
 You have been my North Star through life’s changing shores.
 With every lesson, you gave me more than words,
 And gave me courage when my voice went unheard.
