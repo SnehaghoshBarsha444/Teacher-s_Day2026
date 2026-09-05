@@ -12,7 +12,7 @@ const users = {
   Anamika_Mam: { password: 'Anamika_Mam', role: 'teacher', teacherId: 'Anamika_Mam', redirectTo: '/teacher/Anamika_Mam' },
   Soma_Mam: { password: 'Soma_Mam', role: 'teacher', teacherId: 'Soma_Mam', redirectTo: '/teacher/Soma_Mam' },
   Aparna_Mam: { password: 'Aparna_Mam', role: 'teacher', teacherId: 'Aparna_Mam', redirectTo: '/teacher/Aparna_Mam' },
-  // 'H.O.D_Mam': { password: 'H.O.D_Mam', role: 'teacher', teacherId: 'HOD_Mam', redirectTo: '/teacher/HOD_Mam' },
+  'Sandhya_Mam': { password: 'Sandhya_Mam', role: 'teacher', teacherId: 'Sandhya_Mam', redirectTo: '/teacher/Sandhya_Mam' },
   HOD_Mam: { password: 'HOD_Mam', role: 'teacher', teacherId: 'HOD_Mam', redirectTo: '/teacher/HOD_Mam' },
   Amit_Sir: { password: 'Amit_Sir', role: 'teacher', teacherId: 'Amit_Sir', redirectTo: '/teacher/Amit_Sir' },
   Rubi_Mam: { password: 'Rubi_Mam', role: 'teacher', teacherId: 'Rubi_Mam', redirectTo: '/teacher/Rubi_Mam' },
