@@ -286,16 +286,51 @@ function LetterPage({ letter, user }: { letter: ArchiveLetter; user: UserSession
   const teacher = teachers.find((item) => item.id === letter.teacherId)
   const backTarget = user.role === 'admin' ? '/letters' : `/teacher/${user.teacherId}`
 
+  // Keep the original letter content exactly as it is.
+  // Only visually separate Aparna Mam's Bengali note so it can use a smaller font.
+  const noteMarker = 'Mam, আপনার প্রতি আমার সত্যিকারের কৃতজ্ঞতার একটা কারণ হয়তো আপনি নিজেও জানেন না।'
+  const hasBengaliNote = letter.content.includes(noteMarker)
+
+  const poemContent = hasBengaliNote
+    ? letter.content.substring(0, letter.content.indexOf(noteMarker)).trim()
+    : letter.content
+
+  const bengaliNote = hasBengaliNote
+    ? letter.content.substring(letter.content.indexOf(noteMarker)).trim()
+    : ''
+
   return (
     <main className="archive-page letter-page">
       <Back to={backTarget} />
+
       <article className="opened-letter">
-        <p className="section-number">ARCHIVE LETTER / {letter.type.toUpperCase()}</p>
+        <p className="section-number">
+          ARCHIVE LETTER / {letter.type.toUpperCase()}
+        </p>
+
         <h1 className="page-title">{letter.title}</h1>
-        <p className="letter-recipient">A preserved dedication for {teacher?.name}</p>
+
+        <p className="letter-recipient">
+          A preserved dedication for {teacher?.name}
+        </p>
+
         <div className="letter-rule" />
-        <p className="letter-text">{letter.content}</p>
-        <p className="letter-mark">THE TEACHER ARCHIVE<br />2026</p>
+
+        {/* Main poem */}
+        <div className="letter-text">
+          {poemContent}
+        </div>
+
+        {/* Smaller Bengali personal note */}
+        {bengaliNote && (
+          <div className="letter-note">
+            {bengaliNote}
+          </div>
+        )}
+
+        <p className="letter-mark">
+          THE TEACHER ARCHIVE<br />2026
+        </p>
       </article>
     </main>
   )
