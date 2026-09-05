@@ -190,6 +190,13 @@ footer { display:flex; justify-content:space-between; align-items:center; gap:20
   gap: 6px;
 }
 
+.bengali-note {
+  font-size: 0.78em;
+  line-height: 1.55;
+  display: block;
+  margin-top: 18px;
+}
+
 .logout-btn:hover {
   text-decoration: underline;
 }
