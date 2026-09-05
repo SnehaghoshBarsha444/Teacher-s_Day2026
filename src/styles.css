@@ -200,3 +200,14 @@ footer { display:flex; justify-content:space-between; align-items:center; gap:20
 .logout-btn:hover {
   text-decoration: underline;
 }
+.poem-content {
+  font-size: 1rem;
+  line-height: 1.6;
+  white-space: pre-line;
+}
+
+.teacher-note {
+  font-size: 0.72rem;
+  line-height: 1.5;
+  margin-top: 20px;
+}
