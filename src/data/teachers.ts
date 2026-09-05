@@ -32,7 +32,7 @@ Thank you for helping me grow,
 For teaching more than books could show.
 Your lessons will stay with me,
 Happy Teachers’ Day, with gratitude from me.` },
-  'Surya_Sir': { id: 'Surya_Sir', initials: 'SS', name: 'Surya Sir', poem: `Dear Surya Sir, a mentor I deeply admire,
+  'Surya_Sir': { id: 'Surya_Sir', initials: 'SS', name: 'Surya Sir', poem: `Dear Sir, a mentor I deeply admire,
 You taught me to work with discipline and desire.
 With patience, you showed me the value of consistency,
 And helped me turn small efforts into persistence.
