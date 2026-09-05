@@ -68,7 +68,11 @@ Towards every dream, you helped me grow,
 Happiness and knowledge began to flow.
 Happy Teachers’ Day to the teachers who made
 Learning a journey I’ll never forget.` },
-  'Aparna_Mam': { id: 'Aparna_Mam', initials: 'AM', name: 'Aparna Mam', poem: `Dear Aparna Mam, 
+'Aparna_Mam': {
+  id: 'Aparna_Mam',
+  initials: 'AM',
+  name: 'Aparna Mam',
+  poem: `Dear Aparna Mam, 
 You brought warmth to every lesson,
 To every doubt, you gave attention.
 Your words made difficult things feel clear,
@@ -83,7 +87,9 @@ Towards every dream, you helped me grow,
 Happiness and knowledge began to flow.
 Happy Teachers’ Day to the teachers who made
 Learning a journey I’ll never forget.
-Mam, আপনার প্রতি আমার সত্যিকারের কৃতজ্ঞতার একটা কারণ হয়তো আপনি নিজেও জানেন না। আপনার বলা একটি ছোট্ট suggestion, retrospect-এ ফিরে দেখলে, আমার জীবনের অনেক বড় একটা journey-র শুরু হয়ে দাঁড়িয়েছিল। এখনও আমার মনে আছে ৭ সেপ্টেম্বর, ২০১৯-এর কথা, Chandrayaan-2 mission-এর পর আপনি আমাকে ISRO-এর একটি quiz-এর কথা বলেছিলেন এবং attend করতে বলেছিলেন। আপনার কথা শুনেই আমি quiz-এ অংশ নিই এবং সৌভাগ্যক্রমে top participants-এর মধ্যে selected হই। সেই experience-এর মাধ্যমে এমন একজন mentor-এর সঙ্গে আমার পরিচয় হয়, যিনি পরবর্তীতে আমাকে IIRS-এর courses এবং research-এর দিকে এগিয়ে যেতে উৎসাহিত করেন। ২০২২ সালে আমি IIRS-এ student হিসেবে enrol করি, আর আজ AI in Aerospace domain-এ Junior Research Developer হিসেবে কাজ করছি। এর পাশাপাশি LLM, AI training, testing, penetration testing এবং technical research নিয়েও কাজ করার সুযোগ পেয়েছি। স্কুলে থাকাকালীন এগুলো আপনাকে খুব একটা বলিনি, কারণ আমি চেয়েছিলাম আগে নিজেকে আরও improve করি, তারপর নিজের কাজ দিয়েই তার উত্তর দিতে। কিন্তু আজ মনে হলো আপনাকে এগুলো বলা উচিত, কারণ এই journey-র শুরুতে আপনার সেই ছোট্ট encouragement-এর একটা খুব গুরুত্বপূর্ণ জায়গা আছে। এখন নিজের startup নিয়েও যখন এগিয়ে যাচ্ছি, তখন মাঝে মাঝে মনে হয়, জীবনের অনেক বড় journey আসলে শুরু হয় খুব ছোট্ট একটা কথায়, একজন শিক্ষক যখন বলেন, “তুই এটা try কর।” আর আমার ক্ষেত্রে সেই কথাটা আপনিই বলেছিলেন। সেজন্য আমি সত্যিই আপনার কাছে কৃতজ্ঞ, Mam।` },
+
+<span class="bengali-note">Mam, আপনার প্রতি আমার সত্যিকারের কৃতজ্ঞতার একটা কারণ হয়তো আপনি নিজেও জানেন না। আপনার বলা একটি ছোট্ট suggestion, retrospect-এ ফিরে দেখলে, আমার জীবনের অনেক বড় একটা journey-র শুরু হয়ে দাঁড়িয়েছিল। এখনও আমার মনে আছে ৭ সেপ্টেম্বর, ২০১৯-এর কথা, Chandrayaan-2 mission-এর পর আপনি আমাকে ISRO-এর একটি quiz-এর কথা বলেছিলেন এবং attend করতে বলেছিলেন। আপনার কথা শুনেই আমি quiz-এ অংশ নিই এবং সৌভাগ্যক্রমে top participants-এর মধ্যে selected হই। সেই experience-এর মাধ্যমে এমন একজন mentor-এর সঙ্গে আমার পরিচয় হয়, যিনি পরবর্তীতে আমাকে IIRS-এর courses এবং research-এর দিকে এগিয়ে যেতে উৎসাহিত করেন। ২০২২ সালে আমি IIRS-এ student হিসেবে enrol করি, আর আজ AI in Aerospace domain-এ Junior Research Developer হিসেবে কাজ করছি। এর পাশাপাশি LLM, AI training, testing, penetration testing এবং technical research নিয়েও কাজ করার সুযোগ পেয়েছি। স্কুলে থাকাকালীন এগুলো আপনাকে খুব একটা বলিনি, কারণ আমি চেয়েছিলাম আগে নিজেকে আরও improve করি, তারপর নিজের কাজ দিয়েই তার উত্তর দিতে। কিন্তু আজ মনে হলো আপনাকে এগুলো বলা উচিত, কারণ এই journey-র শুরুতে আপনার সেই ছোট্ট encouragement-এর একটা খুব গুরুত্বপূর্ণ জায়গা আছে। এখন নিজের startup নিয়েও যখন এগিয়ে যাচ্ছি, তখন মাঝে মাঝে মনে হয়, জীবনের অনেক বড় journey আসলে শুরু হয় খুব ছোট্ট একটা কথায়, একজন শিক্ষক যখন বলেন, “তুই এটা try কর।” আর আমার ক্ষেত্রে সেই কথাটা আপনিই বলেছিলেন। সেজন্য আমি সত্যিই আপনার কাছে কৃতজ্ঞ, Mam।</span>`
+},
   'HOD_Mam': { id: 'HOD_Mam', initials: 'HM', name: 'HOD Mam', designation: 'Head of Department', poem: `Dear HOD Mam, a leader wise and true,
 We find our path made clear by you.
 Your vision gives our dreams their way,
