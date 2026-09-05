@@ -162,7 +162,7 @@ Towards every dream, you helped me grow,
 Happiness and knowledge began to flow.
 Happy Teachers’ Day to the teachers who made
 Learning a journey I’ll never forget.` },
-  'Dada': { id: 'Dada', initials: 'SD', name: 'Soumyadeep Dada', poem: `Dear Dada,
+  'Dada': { id: 'Dada', initials: 'SL', name: 'Dada', poem: `Dear Dada,
 Dear Dada, you’ve always been there,
 The one who guides me with such care.
 When I’m lost, you help me find my way,
